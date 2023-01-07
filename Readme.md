@@ -1,8 +1,21 @@
-# Repositório de desafios do site FrontEnd Mentor
+### Screenshot
 
-<p>O intuito desse repositório é armazenar as soluções dos desafios proporcionados pelo site Frontend Mentor.</p>
+![](/images/Order%20Summary.png)
 
-[Site FrontEnd Mentor](https://www.frontendmentor.io)
-<br>
-[Meu Perfil](https://www.frontendmentor.io/profile/Bruno-VR)
+
+### Links
+
+- Live Site URL: [site ao vivo](https://repositorio-desafios-front-end.vercel.app/)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+
+## Author
+
+- Frontend Mentor - [Meu perfil](https://www.frontendmentor.io/profile/Bruno-VR)
 

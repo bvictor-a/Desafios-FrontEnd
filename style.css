@@ -1,0 +1,207 @@
+:root {
+   /* Primary */
+   --Pale-blue: hsl(225, 100%, 94%);
+   --Bright-blue: hsl(245, 75%, 52%);
+
+   /* Neutral */
+   --Very-pale-blue: hsl(225, 100%, 98%);
+   --Desaturated-blue: hsl(224, 23%, 55%);
+   --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-image: url("/images/pattern-background-desktop.svg");
+   background-size: 100%;
+   background-color: var(--Pale-blue);
+   background-repeat: no-repeat;
+   font-family: 'Red Hat Display', sans-serif;
+}
+
+/* CARD */
+main {
+   border-radius: 15px;
+   background-color: var(--Very-pale-blue);
+
+   width: 350px;
+   height: 550px;
+
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   box-shadow: 0px 8px 17px -5px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* CONTAINER */
+.container {
+   width: 350px;
+   height: calc(450px - 171px);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+/* IMAGENS */
+img {
+   width: 350px;
+   border-radius: 15px 15px 0px 0px;
+}
+
+img.icon {
+   width: 35px;
+}
+
+/* TITULO E TEXTO */
+.titles {
+   text-align: center;
+}
+
+h3 {
+   font-size: 24px;
+   font-weight: 900;
+   color: var(--Dark-blue);
+   margin-top: 30px;
+}
+
+p {
+   font-weight: 500;
+   font-size: 14px;
+   margin-top: 15px;
+   color: var(--Desaturated-blue);
+   width: 300px;
+   line-height: 20px;
+}
+
+/* INFORMAÇÕES */
+.informacoes {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   margin-top: 25px;
+   padding: 15px;
+   border-radius: 5px;
+   background: var(--Pale-blue);
+}
+
+.informacoes-plano {
+   display: flex;
+   flex-direction: column;
+   margin-left: 15px;
+   margin-right: 60px;
+   line-height: 20px;
+}
+
+a {
+   font-size: 12px;
+   font-weight: 700;
+   color: var(--Bright-blue);
+}
+
+.title-plano {
+   font-size: 14px;
+   color: var(--Dark-blue);
+   font-weight: 700;
+}
+
+.info-plano {
+   font-size: 14px;
+   color: var(--Desaturated-blue);
+   font-weight: 500;
+}
+
+/* BOTÕES */
+.button {
+   margin-top: 25px;
+   margin-left: 35px;
+}
+
+.first-btn {
+   width: 280px;
+   height: 40px;
+
+   border: none;
+   border-radius: 10px;
+
+   color: var(--Very-pale-blue);
+   background-color: var(--Bright-blue);
+   box-shadow: 0px 10px 25px -3px rgba(0, 0, 0, 0.3);
+
+   font-size: 14px;
+   font-weight: 700;
+   cursor: pointer;
+   font-family: 'Red Hat Display', sans-serif;
+}
+
+.second-btn {
+   color: var(--Desaturated-blue);
+   background-color: transparent;
+   font-family: 'Red Hat Display', sans-serif;
+
+   border: none;
+   border-radius: 10px;
+   margin-top: 10px;
+   width: 280px;
+   height: 40px;
+
+   font-size: 14px;
+   font-weight: 700;
+   cursor: pointer;
+
+}
+
+.first-btn:hover,
+.second-btn:hover {
+   color: var(--Dark-blue);
+}
+
+/* TELAS */
+
+@media (max-width: 1440px) {
+   main {
+      margin-left: auto;
+      margin-right: auto;
+   }
+}
+
+@media (max-width: 375px) {
+   main {
+      width: 300px;
+      margin-top: 40px;
+      margin-left: 30px;
+   }
+
+   img {
+      width: 300px;
+   }
+
+   h3,
+   p,
+   .informacoes {
+      margin-right: 48px;
+   }
+
+   .button {
+      margin-left: 30px;
+      margin-top: 40px;
+   }
+
+   .first-btn,
+   .second-btn {
+      width: 250px;
+   }
+
+}
+
+@media (max-width: 320px) {
+   main {
+      margin-left: 35px;
+      width: 300px;
+   }
+}
