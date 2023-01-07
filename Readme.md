@@ -5,7 +5,7 @@
 
 ### Links
 
-- Live Site URL: [site ao vivo](https://repositorio-desafios-front-kng1zxsf4-bruno-vr.vercel.app/)
+- Live Site URL: [site ao vivo](https://repositorio-desafios-front-8c7g0zze3-bruno-vr.vercel.app/)
 
 ## My process
 
@@ -18,4 +18,3 @@
 ## Author
 
 - Frontend Mentor - [Meu perfil](https://www.frontendmentor.io/profile/Bruno-VR)
-
