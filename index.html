@@ -5,14 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
-  <title>Frontend Mentor | Order summary card</title>
-
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Frontend Mentor | Stats preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -29,29 +28,35 @@
 
 <body>
   <main>
-    <img src="/images/illustration-hero.svg">
-
     <div class="container">
-      <div class="titles">
-        <h3>Order Summary</h3>
-        <p> You can now listen to millions of songs, audiobooks, and podcasts on any
-          device anywhere you like!</p>
-      </div>
-      <div class="informacoes">
-        <div class="icon-image">
-          <img class="icon" src="/images/icon-music.svg">
+      <div class="textos">
+        <h1>Get<span class="text-color"> insights</span> that help your business grow.</h1>
+        <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer
+          experience, and overall efficiency.</p>
+        <div class="spans">
+          <div class="first">
+            <span class="text-one">10K+</span>
+            <span class="text-second">COMPANIES</span>
+          </div>
+          <div class="second">
+            <span class="text-one">314</span>
+            <span class="text-second">TEMPLATES</span>
+          </div>
+          <div class="third">
+            <span class="text-one">12M+</span>
+            <span class="text-second">QUERIES</span>
+          </div>
         </div>
-        <div class="informacoes-plano">
-          <span class="title-plano"> Annual Plan</span>
-          <span class="info-plano">$59.99/year</span>
-        </div>
-        <a href="">Change</a>
       </div>
-      <div class="button">
-        <button class="first-btn">Proceed to Payment</button>
-        <button class="second-btn">Cancel Order</button>
+      <div class="image">
+        <img src="/images/image-header-desktop.jpg" alt="">
       </div>
     </div>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io/profile/Bruno-VR" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Bruno-Vr</a>.
+  </div> -->
   </main>
 </body>
 

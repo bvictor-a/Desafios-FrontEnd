@@ -1,11 +1,11 @@
 ### Screenshot
 
-![](/images/Order%20Summary.png)
+![](/images/screenshot.png)
 
 
 ### Links
 
-- Live Site URL: [site ao vivo](https://repositorio-desafios-front-end.vercel.app/)
+- Live Site URL: [site ao vivo](https://repositorio-desafios-front-kng1zxsf4-bruno-vr.vercel.app/)
 
 ## My process
 
