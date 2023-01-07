@@ -1,150 +1,182 @@
-:root {
-   /* Primary */
-   --Soft-blue: hsl(215, 51%, 70%);
-   --Cyan: hsl(178, 100%, 50%);
-   /* Neutrals */
-   --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
-   --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
-   --Very-dark-blue-line: hsl(215, 32%, 27%);
-   --White: hsl(0, 0%, 100%);
-}
-
 * {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
 }
 
-body {
-   font-size: 18px;
-   font-family: 'Outfit', sans-serif;
-   background-color: var(--Very-dark-blue-main-BG);
-   width: 100%;
+:root {
+   /*primary*/
+   --Dark-cyan: hsl(158, 36%, 37%);
+   --Cream: hsl(30, 38%, 92%);
+   /*neutral*/
+   --Very-dark-blue: hsl(212, 21%, 14%);
+   --Dark-grayish-blue: hsl(228, 12%, 48%);
+   --White: hsl(0, 0%, 100%);
+   /*fonts*/
+   --font-family-type1: 'Fraunces', serif;
+   --font-family-type2: 'Montserrat', sans-serif;
 }
 
-main {
-   width: 350px;
-   height: 600px;
-   background-color: var(--Very-dark-blue-card-BG);
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   margin-top: 1rem;
-   border-radius: 16px;
-   box-shadow: 0px 16px 15px -3px rgba(0, 0, 0, 0.1);
+body {
+   width: 100%;
+   font-size: 14px;
+   background-color: var(--Cream);
 }
 
 .container {
+   width: 600px;
+   height: 450px;
+
+   border-radius: 10px;
+   background-color: var(--White);
+
+   margin: auto;
+   margin-top: 5rem;
+
+   display: flex;
+   flex-direction: row;
+}
+
+.image-product {
+   width: 100%;
+   height: 100%;
+   border-radius: 10px 0 0 10px;
+   background-size: cover;
+   background-image: url(/images/image-product-desktop.jpg);
+   object-fit: cover;
+}
+
+.image-product .details {
+   width: 300px;
+}
+
+.details {
    display: flex;
    flex-direction: column;
-   margin-right: 20px;
-   margin-left: 20px;
+   padding: 40px;
 }
 
-.first-p,
-.texts {
-   margin-top: 12px;
+.title {
+   font-family: var(--font-family-type2);
+   font-weight: 500;
+   color: var(--Dark-grayish-blue);
 }
 
-h3,
-.name {
-   color: var(--White)
-}
+h1 {
+   width: 200px;
+   margin-top: 25px;
+   margin-bottom: 20px;
 
-h3,
-.first-p {
+   font-family: var(--font-family-type1);
    line-height: 28px;
+   font-weight: 700;
 }
 
-.first-p,
-.second-p,
-.days {
-   color: var(--Soft-blue);
+p {
+   width: 230px;
+   font-family: var(--font-family-type2);
+   font-weight: 500;
+   line-height: 25px;
+   color: var(--Dark-grayish-blue);
 }
 
-.itens {
-   width: 310px;
-   margin-top: 30px;
+.values {
    display: flex;
    flex-direction: row;
+   justify-content: space-between;
    align-items: center;
-   justify-content: space-around;
-}
-
-.value {
-   width: 150px;
-   margin-right: 10px;
-   color: var(--Cyan);
-   font-weight: bold;
-}
-
-.profile {
-   width: 310px;
-   margin-top: 30px;
-   padding: 20px;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-around;
-   align-items: center;
-   border-top: 1px solid var(--Very-dark-blue-line);
-}
-
-/* IMAGENS */
-.image {
+   width: 200px;
    margin-top: 20px;
 }
 
-.imagem-nft {
-   width: 310px;
-   height: 300px;
-   border-radius: 16px;
+.main-value {
+   font-family: var(--font-family-type1);
+   font-size: 32px;
+   color: var(--Dark-cyan);
 }
 
-.icon-imagem {
-   width: 12px;
+.original-value {
+   font-family: var(--font-family-type2);
+   color: var(--Dark-grayish-blue);
+   text-decoration: line-through;
 }
 
-.icon-time {
-   width: 20px
+button {
+   width: 230px;
+   padding: 5px;
+   background-color: var(--Dark-cyan);
+
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+
+   border: none;
+   border-radius: 8px;
+
+   margin-top: 25px;
+   margin-right: auto;
+   margin-left: auto;
 }
 
-.icon-avatar {
-   width: 35px;
-   border-radius: 50%;
-   border: 1px solid var(--White)
+button img {
+   margin: 10px;
 }
 
-@media(max-width: 375px) {
-   body {
-      font-family: 12px;
+button .btn-buy {
+   color: var(--White);
+   font-family: var(--font-family-type2);
+   font-size: 14px;
+}
+
+button:hover {
+   cursor: pointer;
+   background-color: var(--Very-dark-blue);
+}
+
+@media (max-width: 425px) {
+   .container {
+      width: 350px;
+      height: 650px;
+      flex-direction: column;
+      margin-top: 2rem;
+      margin-bottom: 20px;
    }
 
-   main {
+   .image-product {
+      border-radius: 10px 10px 0 0;
+      background-position: center;
+      background-image: url(/images/image-product-mobile.jpg);
+   }
+
+   .details {
+      padding: 20px;
+   }
+
+   h1 {
       width: 300px;
-      height: 530px;
-      margin: 10px;
+      margin-top: 20px;
    }
 
-   .imagem-nft {
-      width: 260px;
-      height: 250px;
+   p {
+      width: 295px;
    }
 
-   .itens {
-      width: 260px;
+   button {
+      margin: 20px 0 0 0;
+      width: 310px;
+   }
+}
+
+@media (max-width: 375px) {
+   .container {
+      width: 16rem;
+      top: 60%;
    }
 
-   .value {
-      width: 110px;
-   }
-
-   .profile {
-      width: 260px;
-      padding: 15px;
-   }
-
-   .icon-avatar {
-      width: 25px;
+   h1,
+   p,
+   button {
+      width: 270px;
    }
 }
