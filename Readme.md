@@ -8,8 +8,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [solution](https://your-solution-url.com)
-- Live Site URL: [live site](https://your-live-site-url.com)
+- Solution URL: [solution](https://www.frontendmentor.io/solutions/profile-card-component-0Z4FtUdEpL)
+- Live Site URL: [live site](https://desafios-front-end-git-profile-card-bruno-vr.vercel.app/)
 
 ## My process
 
