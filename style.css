@@ -80,6 +80,7 @@ main {
    color: var(--Dark-grayish-blue);
    font-weight: 400;
    font-size: 0.8rem;
+   margin-left: 5px;
 }
 
 .profile-city {
@@ -104,26 +105,28 @@ main {
    display: flex;
    flex-direction: column;
    align-items: center;
-   width: 150px;
+   width: 90px;
    line-height: 25px;
 }
 
 .number-stats {
    font-weight: 700;
    color: var(--Very-dark-desaturated-blue);
-   font-size: 0.8rem;
+   font-size: 0.9rem;
 }
 
 .title {
    font-weight: 400;
    color: var(--Dark-grayish-blue);
    font-size: 0.6rem;
+   letter-spacing: 1px;
 }
 
 @media (max-width: 375px) {
+
    main,
    .profile-stats,
-   .background{
+   .background {
       width: 300px;
    }
 }
