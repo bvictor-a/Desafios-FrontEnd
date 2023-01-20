@@ -1,16 +1,20 @@
 * {
-   padding: 0;
    margin: 0;
+   padding: 0;
    box-sizing: border-box;
 }
 
 :root {
    /* Primary */
-   --Dark-cyan: hsl(185, 75%, 39%);
-   --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
-   --Dark-grayish-blue: hsl(227, 10%, 46%);
-   /*Neutral */
-   --Dark-gray: hsl(0, 0%, 59%);
+   --Bright-orange: hsl(31, 77%, 52%);
+   --Dark-cyan: hsl(184, 100%, 22%);
+   --Very-dark-cyan: hsl(179, 100%, 13%);
+   /*  Neutral */
+   --Transparent-white: hsla(0, 0%, 100%, 0.75);
+   --Very-light-gray: hsl(0, 0%, 95%);
+   /* Fonts */
+   --font-family-lexend: 'Lexend Deca', sans-serif;
+   --font-family-big: 'Big Shoulders Display', cursive;
 }
 
 body {
@@ -19,114 +23,126 @@ body {
    flex-direction: row;
    justify-content: center;
    align-items: center;
-   font-family: 'Kumbh Sans', sans-serif;
-   background-color: var(--Dark-cyan);
-}
-
-/* .bg-top {
-   width: 50rem;
-   position: absolute;
-   right: 50%;
-   bottom: 30%;
-}
-.bg-bottom {
-   position: absolute;
-   left: 50%;
-   top: 40%;
-} */
-main {
-   width: 340px;
-   height: 360px;
-   border-radius: 15px;
 }
 
 .container {
-   position: relative;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   background-color: rgb(254, 254, 254);
-}
-
-.background {
-   width: 340px;
-}
-
-.bg-card {
-   width: 100%;
-   height: 130px;
-   border-radius: 15px 15px 0 0;
-}
-
-.icon {
-   border: 7px solid rgb(254, 254, 254);
-   border-radius: 50%;
-   position: absolute;
-   top: 20%;
-}
-
-.profile {
-   margin-top: 50px;
-   line-height: 40px;
-}
-
-.profile-name {
-   color: var(--Very-dark-desaturated-blue);
-   font-weight: 700;
-   font-size: 1rem;
-}
-
-.profile-age {
-   color: var(--Dark-grayish-blue);
-   font-weight: 400;
-   font-size: 0.8rem;
-   margin-left: 5px;
-}
-
-.profile-city {
-   color: var(--Dark-grayish-blue);
-   font-weight: 400;
-   font-size: 0.7rem;
-}
-
-.profile-stats {
    display: flex;
    flex-direction: row;
-   justify-content: center;
    align-items: center;
-   border-radius: 0 0 10px 10px;
-   border-top: 0.2px solid rgb(227, 227, 227);
-   width: 340px;
-   height: 100px;
-   margin-top: 30px;
+   justify-content: center;
 }
 
-.stats {
+.card-sedans,
+.card-suvs,
+.card-luxury {
+   width: 300px;
+   height: 480px;
    display: flex;
    flex-direction: column;
-   align-items: center;
-   width: 90px;
+   align-items: flex-start;
+   padding: 40px;
+}
+
+.Title {
+   font-size: 1.8rem;
+   line-height: 100px;
+   font-weight: 700;
+   font-family: var(--font-family-big);
+   color: var(--Very-light-gray);
+   text-transform: uppercase;
+}
+
+.description {
+   width: 195px;
+   font-weight: 400;
+   font-family: var(--font-family-lexend);
+   color: var(--Transparent-white);
+   font-size: 0.7rem;
    line-height: 25px;
 }
 
-.number-stats {
-   font-weight: 700;
-   color: var(--Very-dark-desaturated-blue);
-   font-size: 0.9rem;
+.card-sedans {
+   background-color: var(--Bright-orange);
+   border-radius: 8px 0 0 8px;
 }
 
-.title {
+.card-suvs {
+   background-color: var(--Dark-cyan);
+}
+
+.card-luxury {
+   background-color: var(--Very-dark-cyan);
+   border-radius: 0 8px 8px 0;
+}
+
+img {
+   width: 60px;
+}
+
+button {
+   width: 140px;
+   margin-top: 90px;
+   border: none;
+   outline: none;
+   padding: 12px;
+   font-family: var(--font-family-lexend);
    font-weight: 400;
-   color: var(--Dark-grayish-blue);
-   font-size: 0.6rem;
-   letter-spacing: 1px;
+   font-size: 0.7rem;
+   border-radius: 50px;
+   cursor: pointer;
+   border: 2px solid var(--Very-light-gray);
 }
 
-@media (max-width: 375px) {
+button:hover {
+   background-color: transparent;
+   color: var(--Very-light-gray);
+}
 
-   main,
-   .profile-stats,
-   .background {
+.btn-card-1 {
+   color: var(--Bright-orange);
+}
+
+.btn-card-2 {
+   color: var(--Dark-cyan);
+}
+
+.btn-card-3 {
+   color: var(--Very-dark-cyan);
+}
+
+@media (max-width: 925px) {
+
+   .card-sedans,
+   .card-suvs,
+   .card-luxury {
+      width: 250px;
+      padding: 30px;
+   }
+}
+
+@media (max-width: 875px) {
+   .container {
+      display: flex;
+      flex-direction: column;
+      margin: 30px
+   }
+
+   .card-sedans,
+   .card-suvs,
+   .card-luxury {
       width: 300px;
+      height: 400px;
+   }
+
+   button {
+      margin-top: 30px;
+   }
+
+   .card-sedans {
+      border-radius: 8px 8px 0 0;
+   }
+
+   .card-luxury {
+      border-radius: 0 0 8px 8px;
    }
 }

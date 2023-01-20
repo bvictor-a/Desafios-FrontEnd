@@ -1,16 +1,19 @@
-# Frontend Mentor - Profile card component solution
+# Frontend Mentor - 3-column preview card component solution
 
-This is a solution to the [Profile card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ### Screenshot
 
-![](./images/profile-card.png)
+![](./images/desktop.png)
+
+#### Mobile
+
+![](./images/mobile.png)
 
 ### Links
 
-- Solution URL: [solution](https://www.frontendmentor.io/solutions/profile-card-component-0Z4FtUdEpL)
-- Live Site URL: [live site](https://desafios-front-end-git-profile-card-bruno-vr.vercel.app/)
-
+- Solution URL: [solution]()
+- Live Site URL: [live site]()
 ## My process
 
 ### Built with
@@ -18,7 +21,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- CSS Grid
 
 ## Author
 
-- Frontend Mentor - [@Bruno-VR](https://www.frontendmentor.io/profile/Bruno-VR)
+- Frontend Mentor - [@Bruno-Vr](https://www.frontendmentor.io/profile/Bruno-VR)
