@@ -8,8 +8,8 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 
 ### Links
 
-- Solution URL: [solution](https://your-solution-url.com)
-- Live Site URL: [live site](https://your-live-site-url.com)
+- Solution URL: [solution](https://www.frontendmentor.io/solutions/single-price-grid-component-IX8-v5Ttjd)
+- Live Site URL: [live site](https://desafios-front-end-git-single-price-grid-bruno-vr.vercel.app/)
 
 ## My process
 
@@ -22,4 +22,4 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 
 ## Author
 
-- Frontend Mentor - [@Bruno-VR](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Bruno-VR](https://www.frontendmentor.io/profile/Bruno-VR)
