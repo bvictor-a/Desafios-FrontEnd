@@ -5,144 +5,251 @@
 }
 
 :root {
-   /* Primary */
-   --Bright-orange: hsl(31, 77%, 52%);
-   --Dark-cyan: hsl(184, 100%, 22%);
-   --Very-dark-cyan: hsl(179, 100%, 13%);
-   /*  Neutral */
-   --Transparent-white: hsla(0, 0%, 100%, 0.75);
-   --Very-light-gray: hsl(0, 0%, 95%);
-   /* Fonts */
-   --font-family-lexend: 'Lexend Deca', sans-serif;
-   --font-family-big: 'Big Shoulders Display', cursive;
+   /*  Primary */
+   --Cyan: hsl(179, 62%, 43%);
+   --Bright-Yellow: hsl(71, 73%, 54%);
+   /* Neutral */
+   --Light-Gray: hsl(204, 43%, 93%);
+   --Grayish-Blue: hsl(218, 22%, 67%);
 }
 
 body {
    min-height: 100vh;
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
+   display: grid;
+   font-family: 'Karla', sans-serif;
+   place-content: center;
+   background-color: var(--Light-Gray);
+}
+
+main {
+   width: 830px;
+   height: 590px;
+   border-radius: 8px;
+   box-shadow: 0px 7px 25px 2px rgba(0, 0, 0, 0.1);
 }
 
 .container {
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: center;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 250px 340px;
+   grid-template-areas: "description description"
+      "subscription-plan info";
 }
 
-.card-sedans,
-.card-suvs,
-.card-luxury {
-   width: 300px;
-   height: 480px;
-   display: flex;
-   flex-direction: column;
-   align-items: flex-start;
-   padding: 40px;
-}
-
-.Title {
-   font-size: 1.8rem;
-   line-height: 100px;
-   font-weight: 700;
-   font-family: var(--font-family-big);
-   color: var(--Very-light-gray);
-   text-transform: uppercase;
+.description,
+.subscription-plan,
+.info {
+   padding: 50px;
 }
 
 .description {
-   width: 195px;
+   display: grid;
+   grid-area: description;
+   background-color: rgb(253, 246, 246);
+   border-radius: 8px 8px 0 0;
+
+}
+
+h1 {
+   font-size: 1.4rem;
+   color: var(--Cyan);
+}
+
+.description-info {
+   font-size: 1rem;
+   font-weight: 700;
+   color: var(--Bright-Yellow);
+   padding-top: 30px;
+   padding-bottom: 15px;
+}
+
+.description-text {
+   color: var(--Grayish-Blue);
+   line-height: 30px;
+}
+
+.subscription-plan {
+   display: grid;
+   grid-area: subscription-plan;
+   background-color: var(--Cyan);
+   border-radius: 0 0 0 8px;
+
+}
+
+h3 {
+   font-size: 1.1rem;
+   color: var(--Light-Gray);
+   height: 30px;
+}
+
+.subscription-price {
+   height: 80px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+.price-plan {
+   font-size: 2rem;
+   font-weight: 700;
+   color: rgb(253, 246, 246);
+}
+
+.details-plan {
+   margin-left: 20px;
    font-weight: 400;
-   font-family: var(--font-family-lexend);
-   color: var(--Transparent-white);
-   font-size: 0.7rem;
+   color: hsl(212, 13%, 80%);
+}
+
+.description-plan {
+   color: var(--Light-Gray);
+   font-size: 1rem;
+   padding-bottom: 40px;
+   flex-direction: row;
+   justify-content: center;
+   align-items: end;
+}
+
+a {
+   display: grid;
+   align-self: end;
+   align-items: center;
+   justify-self: center;
+   text-decoration: none;
+   text-align: center;
+   background-color: var(--Bright-Yellow);
+   border-radius: 6px;
+   width: 312px;
+   height: 55px;
+   color: var(--Light-Gray);
+   font-weight: 700;
+   box-shadow: 0px 2px 10px 0px #848484;
+}
+
+.info {
+   display: grid;
+   grid-area: info;
+   background-color: hsl(179, 52%, 49%);
+   border-radius: 0 0 8px 0;
+}
+
+.info-text {
+   font-size: 0.9rem;
+   width: 210px;
+   color: hsl(216, 8%, 88%);
    line-height: 25px;
 }
 
-.card-sedans {
-   background-color: var(--Bright-orange);
-   border-radius: 8px 0 0 8px;
-}
+@media (min-width: 425px) and (max-width: 875px) {
+   main {
+      width: 380px;
+      height: 890px;
+      margin: 70px;
+   }
 
-.card-suvs {
-   background-color: var(--Dark-cyan);
-}
+   .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 300px 1fr;
+      grid-template-areas: "description"
+         "subscription-plan"
+         "info";
+   }
 
-.card-luxury {
-   background-color: var(--Very-dark-cyan);
-   border-radius: 0 8px 8px 0;
-}
-
-img {
-   width: 60px;
-}
-
-button {
-   width: 140px;
-   margin-top: 90px;
-   border: none;
-   outline: none;
-   padding: 12px;
-   font-family: var(--font-family-lexend);
-   font-weight: 400;
-   font-size: 0.7rem;
-   border-radius: 50px;
-   cursor: pointer;
-   border: 2px solid var(--Very-light-gray);
-}
-
-button:hover {
-   background-color: transparent;
-   color: var(--Very-light-gray);
-}
-
-.btn-card-1 {
-   color: var(--Bright-orange);
-}
-
-.btn-card-2 {
-   color: var(--Dark-cyan);
-}
-
-.btn-card-3 {
-   color: var(--Very-dark-cyan);
-}
-
-@media (max-width: 925px) {
-
-   .card-sedans,
-   .card-suvs,
-   .card-luxury {
-      width: 250px;
+   .description,
+   .subscription-plan,
+   .info {
       padding: 30px;
    }
+
+   h1 {
+      font-size: 1.2rem;
+   }
+
+   .description-text {
+      width: 300px;
+   }
+
+   .description-info {
+      line-height: 25px;
+      width: 330px;
+      padding-top: 30px;
+   }
+
+   .subscription-plan {
+      border-radius: 0;
+   }
+
+   a {
+      align-self: end;
+      align-items: center;
+      justify-self: center;
+      width: 330px;
+   }
+
+   .info {
+      border-radius: 0 0 8px 8px;
+   }
+
+   .info-text {
+      padding-top: 20px;
+   }
 }
 
-@media (max-width: 875px) {
-   .container {
-      display: flex;
-      flex-direction: column;
-      margin: 30px
-   }
-
-   .card-sedans,
-   .card-suvs,
-   .card-luxury {
+@media (max-width: 425px) {
+   main {
       width: 300px;
-      height: 400px;
+      height: 890px;
+      margin: 50px;
    }
 
-   button {
-      margin-top: 30px;
+   .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 300px 1fr;
+      grid-template-areas: "description"
+         "subscription-plan"
+         "info";
    }
 
-   .card-sedans {
-      border-radius: 8px 8px 0 0;
+   .description,
+   .subscription-plan,
+   .info {
+      padding: 20px;
    }
 
-   .card-luxury {
+   h1 {
+      font-size: 1.2rem;
+   }
+
+   .description-text {
+      width: 280px;
+   }
+
+   .description-info {
+      line-height: 25px;
+      width: 280px;
+      padding-top: 30px;
+   }
+
+   .subscription-plan {
+      border-radius: 0;
+   }
+
+   .description-plan {
+      font-size: 0.9rem;
+   }
+
+   a {
+      align-self: end;
+      align-items: center;
+      justify-self: center;
+      width: 280px;
+   }
+
+   .info {
       border-radius: 0 0 8px 8px;
+   }
+
+   .info-text {
+      padding-top: 20px;
    }
 }

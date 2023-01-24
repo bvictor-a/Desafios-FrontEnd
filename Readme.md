@@ -1,19 +1,16 @@
-# Frontend Mentor - 3-column preview card component solution
+# Frontend Mentor - Single price grid component solution
 
-This is a solution to the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Single price grid component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ### Screenshot
 
 ![](./images/desktop.png)
 
-#### Mobile
-
-![](./images/mobile.png)
-
 ### Links
 
-- Solution URL: [solution]()
-- Live Site URL: [live site]()
+- Solution URL: [solution](https://your-solution-url.com)
+- Live Site URL: [live site](https://your-live-site-url.com)
+
 ## My process
 
 ### Built with
@@ -25,4 +22,4 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 ## Author
 
-- Frontend Mentor - [@Bruno-Vr](https://www.frontendmentor.io/profile/Bruno-VR)
+- Frontend Mentor - [@Bruno-VR](https://www.frontendmentor.io/profile/yourusername)
