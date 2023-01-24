@@ -6,14 +6,10 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 ![](./images/desktop.png)
 
-#### Mobile
-
-![](./images/mobile.png)
-
 ### Links
 
-- Solution URL: [solution]()
-- Live Site URL: [live site]()
+- Solution URL: [solution](https://github.com/bvictor-a/Desafios-FrontEnd/tree/3-column-card)
+- Live Site URL: [live site](https://desafios-front-end-git-3-column-card-bruno-vr.vercel.app/)
 ## My process
 
 ### Built with
@@ -21,7 +17,6 @@ This is a solution to the [3-column preview card component challenge on Frontend
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 
 ## Author
 
