@@ -1,0 +1,180 @@
+:root {
+   --Violet: hsl(257, 40%, 49%);
+   --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 62, 5%;
+}
+
+body {
+   display: grid;
+   place-content: center;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 400;
+   min-height: 100vh;
+}
+
+main {
+   width: 1440px;
+   height: 800px;
+
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 2fr 1fr;
+   grid-template-areas: "logo logo"
+      "mockups description"
+      "social-links social-links";
+
+   background-image: url(./images/bg-desktop.svg);
+   background-repeat: no-repeat;
+   background-color: var(--Violet);
+
+}
+
+#logo {
+   padding: 50px;
+   grid-area: logo;
+}
+
+#mockups {
+   padding-left: 50px;
+   grid-area: mockups;
+}
+
+#description {
+   display: flex;
+   flex-direction: column;
+   width: 610px;
+   height: 520px;
+   padding: 50px;
+   grid-area: description;
+}
+
+h1,
+p,
+ion-icon {
+   color: #ffffff;
+}
+
+h1,
+p,
+.btn-register {
+   margin-bottom: 20px;
+}
+
+h1 {
+   font-family: 'Poppins', sans-serif;
+   font-weight: 600;
+}
+
+p {
+   font-size: 0.9rem;
+   line-height: 25px;
+}
+
+.btn-register {
+   width: 180px;
+   height: 50px;
+   display: grid;
+   place-content: center;
+   background-color: #ffffff;
+   color: var(--Violet);
+   border-radius: 50px;
+   text-decoration: none;
+   font-family: 'Poppins', sans-serif;
+   font-size: 0.8rem;
+   box-shadow: 1px 2px 8px 0px #2d2d22;
+}
+
+.btn-register:hover {
+   color: #ffffff;
+   background-color: var(--Soft-Magenta);
+}
+
+#social-links {
+   display: grid;
+   justify-content: flex-end;
+   align-items: center;
+   grid-area: social-links;
+}
+
+.icons {
+   padding: 15px;
+   margin-right: 60px;
+}
+
+ion-icon {
+   padding: 5px;
+}
+
+ion-icon:hover {
+   color: var(--Soft-Magenta);
+}
+
+
+@media (min-width: 375px) and (max-width: 768px) {
+   main {
+      width: 100vw;
+      height: 870px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 130px 270px 370px 100px;
+      grid-template-areas: "logo"
+         "mockups"
+         "description"
+         "social-links";
+      background-image: url(./images/bg-mobile.svg);
+      background-position: top center;
+      background-size: 100%;
+
+   }
+
+   #logo {
+      width: 180px;
+      padding: 30px 30px 0 20px;
+   }
+
+   #mockups {
+      width: 325px;
+      margin: 0 auto;
+      padding-left: 0;
+   }
+
+   #description {
+      width: 72%;
+      height: 370px;
+      margin: 0 auto;
+      align-items: center;
+      text-align: center;
+      padding: 0;
+   }
+
+   #social-links {
+      place-content: center;
+   }
+
+   .icons {
+      padding: 0;
+      margin-right: 0;
+   }
+
+   h1 {
+      margin-top: 30px;
+      font-size: 1.2rem;
+   }
+
+   p {
+      font-size: 0.7rem;
+   }
+
+   .btn-register {
+      height: 40px;
+      font-size: 0.6rem;
+   }
+}
