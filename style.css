@@ -146,10 +146,8 @@ span {
 }
 
 
-
-
 @media (max-width: 425px) {
-   main {
+   main #component-active{
       width: 350px;
    }
 }

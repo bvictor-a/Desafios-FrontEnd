@@ -8,8 +8,8 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 ### Links
 
-- Solution URL: [Solution]()
-- Live Site URL: [Live site]()
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/interactive-rating-component-SgB-8f93aY)
+- Live Site URL: [Live site](https://desafios-front-end-git-interactive-rating-bruno-vr.vercel.app/)
 
 ## My process
 
