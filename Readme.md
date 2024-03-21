@@ -4,17 +4,13 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 ## Overview
 
-[Site FrontEnd Mentor](https://www.frontendmentor.io)
-<br>
-[Meu Perfil](https://www.frontendmentor.io/profile/Bruno-VR)
-
 ![](./assets/images/Screenshot.jpg)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/social-links-profile-LQeLgLIE9f)
+- Live Site URL: [Live site](https://desafios-front-end-ksnc-60ik3q0ae-brunovrs-projects.vercel.app/)
 
 ## My process
 
